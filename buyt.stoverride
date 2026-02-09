@@ -18,5 +18,5 @@ http:
       timeout: 10
 script-providers:
   buyt:
-    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/AdGuardProCrack.js
+    url: https://raw.githubusercontent.com/circas/iapstro/refs/heads/main/iapi.js
     interval: 86400
