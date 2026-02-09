@@ -1,0 +1,22 @@
+#!desc=buy 美区 解锁会员
+#!homepage=googol
+#!author=cc
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/x.png
+name: buy
+desc: buy 美区 解锁会员
+http:
+  mitm:
+    - "buy.itunes.apple.com"
+    - "api.revenuecat.com"
+    - "api.adapty.io"
+    - "sandbox.itunes.apple.com"
+  script:
+    - match: ^https?:\/\/(buy\.itunes\.apple\.com|api\.revenuecat\.com|api\.adapty\.io|.*sudinc.*)
+      name: buyt
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  buyt:
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/AdGuardProCrack.js
+    interval: 86400
