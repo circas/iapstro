@@ -2,6 +2,7 @@
  * Universal IAP Simulator for Stash
  * Targets: Apple, RevenueCat, Adapty, Paddle
  */
+console.log("SCRIPT CALISTI:", $request.url);
 
 const url = $request.url;
 let obj = JSON.parse($response.body || "{}");
@@ -55,5 +56,6 @@ if (url.includes("api.adapty.io/v1/sdk/analytics/profiles/")) {
         }
     };
 }
+
 
 $done({ body: JSON.stringify(obj) });
